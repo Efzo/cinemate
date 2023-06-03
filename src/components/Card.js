@@ -15,7 +15,7 @@ const image =  poster_path  ? `https://image.tmdb.org/t/p/w500/${poster_path}` :
 
           <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
 
-                <Link to={`/movie/${id}`}> <img class="rounded-t-lg" src={image} alt="image" /> </Link>
+                <Link to={`/movie/${id}`}> <img class="rounded-t-lg" src={image} alt="" /> </Link>
                     
                 
                <div class="p-5">
