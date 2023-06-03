@@ -5,7 +5,7 @@ import Backup  from "../assets/images/logo512.png";
 export const Card = ({movie}) => {
 
 
-const {id, original_title, overview, poster_path, title} = movie;
+const {id, original_title, overview, poster_path} = movie;
 const image =  poster_path  ? `https://image.tmdb.org/t/p/w500/${poster_path}` : Backup ;
 
 
