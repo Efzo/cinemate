@@ -8,6 +8,7 @@ import Backup from "../assets/images/logo512.png";
 export const MovieDetail = ({title}) => {
 
 const params= useParams();
+
 const [movie, setMovie] = useState({});
 const image =  movie.poster_path  ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup ;
 
@@ -20,7 +21,7 @@ useEffect( () =>  {
     
   }
   fetchMovies()
-}, [])
+}, [params.id])
 
 
 useEffect(() => {
